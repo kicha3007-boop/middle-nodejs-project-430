@@ -1,0 +1,17 @@
+node_modules/
+
+# Собранная статика фронтенда: её раскладывает make build
+public/
+
+# TypeSpec, отчёты, временные файлы
+tsp-output/
+tmp/
+coverage/
+*.log
+
+# Локальные переменные окружения (шаблон — .env.example)
+.env
+
+.DS_Store
+.idea/
+.vscode/

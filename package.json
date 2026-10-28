@@ -1,0 +1,41 @@
+{
+  "name": "flight-booking",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Бекенд сервиса бронирования авиабилетов: API по контракту и раздача готового фронтенда",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node src/server.ts",
+    "db:prepare": "node src/cli.ts prepare",
+    "db:migrate": "node src/cli.ts migrate",
+    "db:seed": "node src/cli.ts seed",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "typecheck": "tsc",
+    "contract": "tsp compile contract"
+  },
+  "dependencies": {
+    "@fastify/static": "^10.1.8",
+    "@hexlet/js-flight-booking-frontend": "^1.0.1",
+    "fastify": "^5.12.7",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.5",
+    "@types/pg": "^8.23.1",
+    "@typespec/compiler": "^1.17.0",
+    "@typespec/http": "^1.17.0",
+    "@typespec/openapi": "^1.17.0",
+    "@typespec/openapi3": "^1.17.0",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.0.5"
+  }
+}

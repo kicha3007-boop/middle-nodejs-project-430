@@ -1,0 +1,6 @@
+node_modules/
+public/
+tmp/
+contract/openapi.yaml
+package-lock.json
+.github/workflows/hexlet-check.yml
